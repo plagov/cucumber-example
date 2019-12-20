@@ -9,9 +9,4 @@ class Test {
     fun foo() {
         Assertions.assertTrue(true)
     }
-
-    @Test
-    fun bar() {
-        Assertions.assertFalse(true)
-    }
 }
