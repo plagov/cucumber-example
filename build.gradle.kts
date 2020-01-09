@@ -19,6 +19,9 @@ dependencies {
     implementation("io.cucumber:cucumber-java:$cucumberVersion")
     implementation("io.cucumber:cucumber-junit:$cucumberVersion")
     implementation("io.cucumber:cucumber-guice:$cucumberVersion")
+
+    implementation("org.testcontainers:selenium:1.12.4")
+    implementation("com.codeborne:selenide:5.6.0")
 }
 
 val cucumberRuntime by configurations.creating {
