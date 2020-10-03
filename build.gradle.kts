@@ -1,8 +1,8 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.3.61"
+    id("org.jetbrains.kotlin.jvm") version "1.4.10"
 }
 
-val cucumberVersion = "4.8.0"
+val cucumberVersion = "6.7.0"
 
 repositories {
     jcenter()
@@ -14,11 +14,14 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     implementation("io.kotlintest:kotlintest-runner-junit5:3.4.2")
-    implementation("com.google.inject:guice:4.2.2")
+    implementation("com.google.inject:guice:4.2.3")
 
     implementation("io.cucumber:cucumber-java:$cucumberVersion")
     implementation("io.cucumber:cucumber-junit:$cucumberVersion")
     implementation("io.cucumber:cucumber-guice:$cucumberVersion")
+
+    implementation("org.testcontainers:selenium:1.14.3")
+    implementation("com.codeborne:selenide:5.15.1")
 }
 
 val cucumberRuntime by configurations.creating {
