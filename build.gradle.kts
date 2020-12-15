@@ -2,7 +2,7 @@ plugins {
   id("org.jetbrains.kotlin.jvm") version "1.4.21"
 }
 
-val cucumberVersion = "6.7.0"
+val cucumberVersion = "6.9.1"
 
 repositories {
   jcenter()
