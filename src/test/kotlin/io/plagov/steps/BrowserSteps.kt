@@ -11,7 +11,7 @@ import org.testcontainers.containers.BrowserWebDriverContainer
 
 class BrowserSteps {
 
-    private val browserImage = "selenium/standalone-chrome:85.0"
+    private val browserImage = "selenium/standalone-chrome-debug:3.141.59"
     private val container: BrowserWebDriverContainer<*> = BrowserWebDriverContainer<Nothing>(browserImage).withCapabilities(ChromeOptions())
 
     @Given("start browser")
