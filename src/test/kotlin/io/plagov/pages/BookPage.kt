@@ -15,5 +15,5 @@ class BookPage {
   }
 
   private fun bookTitle() = element("#bookTitle")
-  private fun bookAuthors() = elements("#bookAuthors .authorName")
+  fun bookAuthors() = elements("#bookAuthors .authorName")
 }

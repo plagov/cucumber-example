@@ -10,7 +10,7 @@ class HomepageSteps @Inject constructor(private val browserSteps: BrowserSteps) 
   private val homePage = HomePage()
 
   companion object {
-    private const val KNOWN_AUTHOR = "Ernest Hemingway"
+    const val KNOWN_AUTHOR = "Ernest Hemingway"
   }
 
   @Given("user opened the Goodreads home page")
