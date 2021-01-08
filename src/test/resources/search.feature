@@ -1,3 +1,4 @@
+@search
 Feature: Goodreads global search
 
   Scenario: Search books of a known author

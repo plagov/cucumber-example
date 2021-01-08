@@ -11,9 +11,19 @@ class BookPage {
   fun load(): BookPage {
     bookTitle().shouldBe(visible).shouldNotBe(empty)
     bookAuthors().shouldHave(sizeGreaterThanOrEqual(1))
+    coverImage().shouldBe(visible)
+    description().shouldBe(visible).shouldNotBe(empty)
+    bookAuthorProfile().shouldBe(visible)
     return this
   }
 
-  private fun bookTitle() = element("#bookTitle")
   fun bookAuthors() = elements("#bookAuthors .authorName")
+
+  private fun bookTitle() = element("#bookTitle")
+  private fun coverImage() = element("#coverImage")
+  private fun description() = element("#description")
+
+  private fun bookAuthorProfile() = element(".bookAuthorProfile")
+
+  fun bookAuthorProfileName() = bookAuthorProfile().find(".bookAuthorProfile__name")
 }
