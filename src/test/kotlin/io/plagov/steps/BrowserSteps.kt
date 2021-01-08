@@ -2,7 +2,6 @@ package io.plagov.steps
 
 import com.codeborne.selenide.Configuration
 import com.codeborne.selenide.Selenide.open
-import com.codeborne.selenide.Selenide.title
 import com.codeborne.selenide.WebDriverRunner
 import io.cucumber.java.en.Given
 import io.kotlintest.shouldBe
@@ -18,8 +17,7 @@ class BrowserSteps {
     fun startBrowser() {
         startBrowserContainer()
         open("/")
-        title() shouldBe "Google"
-        container.getDockerImageName() shouldBe browserImage
+        container.dockerImageName shouldBe browserImage
     }
 
     private fun startBrowserContainer() {
@@ -28,8 +26,8 @@ class BrowserSteps {
     }
 
     private fun configureSelenide() {
-        WebDriverRunner.setWebDriver(container.getWebDriver())
-        Configuration.baseUrl = "https://www.google.com"
+        WebDriverRunner.setWebDriver(container.webDriver)
+        Configuration.baseUrl = "https://www.goodreads.com/"
         Configuration.browserSize = "1920x1080"
     }
 }
