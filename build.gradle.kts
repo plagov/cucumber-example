@@ -14,7 +14,7 @@ dependencies {
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
   implementation("io.kotlintest:kotlintest-runner-junit5:3.4.2")
-  implementation("com.google.inject:guice:4.2.3")
+  implementation("com.google.inject:guice:5.0.1")
 
   implementation("io.cucumber:cucumber-java:$cucumberVersion")
   implementation("io.cucumber:cucumber-junit:$cucumberVersion")
