@@ -20,7 +20,7 @@ dependencies {
   implementation("io.cucumber:cucumber-junit:$cucumberVersion")
   implementation("io.cucumber:cucumber-guice:$cucumberVersion")
 
-  implementation("org.testcontainers:selenium:1.15.2")
+  implementation("org.testcontainers:selenium:1.15.3")
   implementation("com.codeborne:selenide:5.20.1")
 }
 
